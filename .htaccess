@@ -1,0 +1,6 @@
+RewriteEngine On /mcs/
+RewriteBase /mcs
+RewriteCond $1 !^(index\.php|assets|public|\.txt)
+RewriteCond %{request_filename} !-f
+RewriteCond %{request_filename} !-d
+RewriteRule ^(.*)$ index.php/$1 [PT,L]
