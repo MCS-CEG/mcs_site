@@ -1,5 +1,5 @@
-RewriteEngine On /floating-caverns-83920/
-RewriteBase /floating-caverns-83920
+RewriteEngine On 
+RewriteBase /
 RewriteCond $1 !^(index\.php|assets|public|\.txt)
 RewriteCond %{request_filename} !-f
 RewriteCond %{request_filename} !-d
